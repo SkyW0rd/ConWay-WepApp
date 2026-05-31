@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Conway Life</title>
+  <link rel="stylesheet" href="/css/site.css?v=21" />
+</head>
+<body>
+  <div class="layout">
+    <main class="container">
+      <h1>Игра Жизнь — Conway</h1>
+
+      <div class="controls">
+        <button id="stepBtn">Шаг</button>
+        <button id="runBtn">Старт</button>
+        <button id="stopBtn">Стоп</button>
+        <button id="randomBtn">Случайно</button>
+        <button id="clearBtn">Очистить</button>
+
+        <button id="moveUpBtn">↑</button>
+        <button id="moveLeftBtn">←</button>
+        <button id="moveRightBtn">→</button>
+        <button id="moveDownBtn">↓</button>
+
+        <button id="rotateLeftBtn">↺</button>
+        <button id="rotateRightBtn">↻</button>
+        <button id="flipHBtn">↔</button>
+        <button id="flipVBtn">↕</button>
+
+        <button id="placeBtn">Поставить</button>
+        <button id="cancelPatternBtn">Отмена фигуры</button>
+      </div>
+
+      <div class="stats">
+        <span>Живых клеток: <b id="population">0</b></span>
+        <span>Поколение: <b id="generation">0</b></span>
+      </div>
+
+      <div id="grid" class="grid"></div>
+    </main>
+
+    <aside class="pattern-panel">
+      <h2>Фигуры</h2>
+      <input id="patternSearch" placeholder="Поиск фигуры..." />
+      <div id="patternList"></div>
+    </aside>
+  </div>
+
+  <script src="/js/patterns.js?v=21"></script>
+  <script src="/js/site.js?v=21"></script>
+</body>
+</html>
